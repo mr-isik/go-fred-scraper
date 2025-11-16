@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Binary executable
+fred-scraper
+fred-scraper.exe
+
+# Output files
+*.csv
+
+# VS Code
+.vscode/
