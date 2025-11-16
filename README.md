@@ -22,22 +22,20 @@ Projeyi kullanmaya başlamadan önce Go'nun sisteminizde kurulu olduğundan emin
     cd go-fred-scraper
     ```
 
-2.  **FRED API Anahtarını Ayarlayın:**
+2.  **Bağımlılıkları Yükleyin:**
+
+    ```bash
+    go mod tidy
+    ```
+
+3.  **`.env` Dosyasını Oluşturun:**
 
     Uygulamanın FRED API'si ile iletişim kurabilmesi için bir API anahtarına ihtiyacı vardır. FRED web sitesinden ücretsiz olarak bir API anahtarı alabilirsiniz.
 
-    API anahtarınızı bir ortam değişkeni olarak ayarlamanız gerekmektedir.
+    Projenin ana dizininde `.env` adında bir dosya oluşturun ve içine API anahtarınızı aşağıdaki gibi ekleyin:
 
-    **Windows (PowerShell):**
-
-    ```powershell
-    $env:FRED_API_KEY="SENIN_API_ANAHTARIN"
     ```
-
-    **Linux / macOS:**
-
-    ```bash
-    export FRED_API_KEY="SENIN_API_ANAHTARIN"
+    FRED_API_KEY=SENIN_API_ANAHTARIN
     ```
 
     `SENIN_API_ANAHTARIN` kısmını kendi FRED API anahtarınız ile değiştirmeyi unutmayın.
